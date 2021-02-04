@@ -9,6 +9,7 @@
     <string name="account">Do you have an account?</string>
     <string name="tosubscribe"> | subscribe</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="welcome_to_home">Welcome to home !!!</string>
 
 
 </resources>

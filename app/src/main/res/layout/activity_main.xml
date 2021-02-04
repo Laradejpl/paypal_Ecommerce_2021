@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_label_titre"
         app:layout_constraintVertical_bias="1.0">
         <EditText
-            android:id="@+id/edtLoginEmail"
+            android:id="@+id/activity_main_edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="113dp"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.118">
 
         <EditText
-            android:id="@+id/edtLoginPassword"
+            android:id="@+id/activity_main_edtPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
@@ -122,9 +122,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:textStyle="bold"
         android:text="Forgot your password ?"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
 
@@ -157,7 +157,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         tools:ignore="UnknownId">
 
         <TextView
@@ -165,8 +165,7 @@
             android:layout_height="wrap_content"
             android:text="@string/account"
 
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_subscribe"
@@ -174,10 +173,8 @@
             android:layout_height="wrap_content"
             android:text="@string/tosubscribe"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="15sp"
-            />
-
+            android:textStyle="bold" />
 
 
     </LinearLayout>
