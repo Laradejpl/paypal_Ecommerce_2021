@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OnlineStoreKotlin</string>
+    <string name="titre_app">Online Store</string>
+    <string name="label_splash"> © Larade jean-philippe - 2021</string>
+    <string name="et_hint_email_id">Enter your Email</string>
+    <string name="et_hint_password">Enter your Password</string>
+    <string name="et_hint_password_confirmation">Confirm your Password</string>
+    <string name="et_hint_username">Enter your Username</string>
+    <string name="account">Do you have an account?</string>
+    <string name="tosubscribe"> | subscribe</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+
+
+</resources>
