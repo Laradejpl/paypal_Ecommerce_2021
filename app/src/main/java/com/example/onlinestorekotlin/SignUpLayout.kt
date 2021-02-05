@@ -49,7 +49,7 @@ class SignUpLayout : AppCompatActivity() {
                         sign_up_layout_edtUsername.text.toString() + "&pass=" + sign_up_layout_edtPassword.text.toString()
 
                 val requestQ: RequestQueue = Volley.newRequestQueue(this)
-                val stringRequest = StringRequest(Request.Method.GET,signUpUrl, Response.Listener {
+                val stringRequest = StringRequest(Request.Method.GET,signUpUrl, {
 
 
                     response ->
@@ -83,7 +83,7 @@ class SignUpLayout : AppCompatActivity() {
 
 
 
-                }, Response.ErrorListener { error->
+                }, { error->
 
 
                     val dialogBuilder = AlertDialog.Builder(this)

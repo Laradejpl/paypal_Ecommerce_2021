@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
             val requestQ: RequestQueue = Volley.newRequestQueue(this)
 
-            val stringRequest = StringRequest(Request.Method.GET,loginURL, Response.Listener {
+            val stringRequest = StringRequest(Request.Method.GET,loginURL, {
 
 
                 response ->
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(homeIntent)
 
 
-                }else{
+                } else{
 
                     val dialogBuilder = AlertDialog.Builder(this)
                     dialogBuilder.setTitle("Message")
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            },  Response.ErrorListener { error ->
+            }, { error ->
 
 
                 val dialogBuilder = AlertDialog.Builder(this)
