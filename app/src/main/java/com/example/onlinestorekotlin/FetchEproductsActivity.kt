@@ -1,5 +1,6 @@
 package com.example.onlinestorekotlin
 
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -7,10 +8,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.RequestQueue
-import com.android.volley.Response
+
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_fetch_eproducts.*
+import kotlinx.android.synthetic.main.activity_fetch_eproducts.title_brand_text_view
+import kotlinx.android.synthetic.main.activity_home_screen.*
 
 class FetchEproductsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +23,9 @@ class FetchEproductsActivity : AppCompatActivity() {
         window.setFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        val typeface: Typeface = Typeface.createFromAsset(assets,"Tabby - Display.ttf")
+        title_brand_text_view.typeface = typeface
 
 
 
@@ -33,7 +39,7 @@ class FetchEproductsActivity : AppCompatActivity() {
         var productsUrl = "https://reggaerencontre.com/fetch_eproducts.php?brand=$selectedBrand"
         val requestQ: RequestQueue = Volley.newRequestQueue(this)
 
-        var jsonAR = JsonArrayRequest(Request.Method.GET, productsUrl,null, Response.Listener {
+        var jsonAR = JsonArrayRequest(Request.Method.GET, productsUrl,null, {
             response ->
 
            for (productJOIndex in 0.until(response.length())){
@@ -50,7 +56,7 @@ class FetchEproductsActivity : AppCompatActivity() {
             productsRV.adapter = pAdapter
 
 
-        }, Response.ErrorListener { error ->
+        }, { error ->
 
 
             val dialogBuilder = AlertDialog.Builder(this)
