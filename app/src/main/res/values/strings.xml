@@ -6,10 +6,11 @@
     <string name="et_hint_password">Enter your Password</string>
     <string name="et_hint_password_confirmation">Confirm your Password</string>
     <string name="et_hint_username">Enter your Username</string>
-    <string name="account">Do you have an account?</string>
-    <string name="tosubscribe"> | subscribe</string>
-    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="account"><u>Do you have an account?</u></string>
+    <string name="tosubscribe"> | <u>subscribe</u></string>
+    <string name="create_account"> <u>CREATE ACCOUNT</u></string>
     <string name="welcome_to_home">Welcome to home !!!</string>
+
 
 
 </resources>
