@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartProductsActivity">
+    tools:context=".FetchEproductsActivity"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/title_temporary_activity"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:background="@drawable/ic_purplecourbe"
+        android:gravity="center"
+       android:text="Temporary Orders"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartProductListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
