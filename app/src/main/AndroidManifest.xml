@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineStoreKotlin">
-        <activity android:name=".FinalizeShoppingActivity"></activity>
+        <activity android:name=".ThankYouActivity"></activity>
+        <activity android:name=".FinalizeShoppingActivity" />
         <activity
             android:name=".CartProductsActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FetchEproductsActivity"
             android:screenOrientation="portrait" />

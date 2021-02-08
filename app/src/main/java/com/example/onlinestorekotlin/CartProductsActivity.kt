@@ -38,14 +38,14 @@ class CartProductsActivity : AppCompatActivity() {
 
             val deleteUrl = "https://reggaerencontre.com/decline_order.php?email=${Person.email}"
             val requestQ = Volley.newRequestQueue(this@CartProductsActivity)
-            val stringRequest = StringRequest(Request.Method.GET, deleteUrl, Response.Listener{
+            val stringRequest = StringRequest(Request.Method.GET, deleteUrl, {
                 response ->
 
 
                 var intent = Intent(this, HomeScreen::class.java)
                 startActivity(intent)
 
-            }, Response.ErrorListener {
+            }, {
                 error ->
 
 
